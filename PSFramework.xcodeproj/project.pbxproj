@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8BBA890222145D7500D067AE /* PSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BBA890022145D7500D067AE /* PSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BBA890922145F7000D067AE /* MyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA890822145F7000D067AE /* MyLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8BBA88FD22145D7500D067AE /* PSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBA890022145D7500D067AE /* PSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSFramework.h; sourceTree = "<group>"; };
 		8BBA890122145D7500D067AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBA890822145F7000D067AE /* MyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				8BBA890022145D7500D067AE /* PSFramework.h */,
 				8BBA890122145D7500D067AE /* Info.plist */,
+				8BBA890822145F7000D067AE /* MyLog.swift */,
 			);
 			path = PSFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					8BBA88FC22145D7500D067AE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBA890922145F7000D067AE /* MyLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		8BBA890622145D7500D067AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.primesoft.PSFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		8BBA890722145D7500D067AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
